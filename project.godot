@@ -8,15 +8,30 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "TextureButton",
+"class": "Card",
+"language": "GDScript",
+"path": "res://Card.gd"
+} ]
 _global_script_class_icons={
-
+"Card": ""
 }
 
 [application]
 
 config/name="MLpMemory"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GameManager="*res://GameManager.gd"
+
+[display]
+
+window/size/width=1900
+window/size/height=1000
 
 [rendering]
 

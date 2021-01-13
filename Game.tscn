@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://assets/bkg/PTC-ultimate-pink_1250x834.png" type="Texture" id=2]
+[ext_resource path="res://assets/bkg/Corner.png" type="Texture" id=3]
+[ext_resource path="res://assets/bkg/4symbols.png" type="Texture" id=4]
+[ext_resource path="res://assets/bkg/TutGirl.png" type="Texture" id=5]
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BKGColor" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 640.0
+margin_bottom = 280.0
+color = Color( 0.34902, 0.0784314, 0.254902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CardGrid" type="GridContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 250.0
+margin_top = 150.0
+margin_right = -250.0
+margin_bottom = -550.0
+columns = 13
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PTC-ultimate-pink_1250x834" type="Sprite" parent="."]
+position = Vector2( 961.113, 304.816 )
+scale = Vector2( 2, 1.28 )
+texture = ExtResource( 2 )
+
+[node name="4symbols" type="Sprite" parent="."]
+position = Vector2( 967.4, 289.305 )
+scale = Vector2( 0.389831, 0.389831 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="Corner" type="Sprite" parent="."]
+position = Vector2( 1801.76, 896.506 )
+scale = Vector2( 0.0627504, 0.0627504 )
+texture = ExtResource( 3 )
+
+[node name="TutGirl" type="Sprite" parent="."]
+position = Vector2( 115.589, 894.645 )
+scale = Vector2( 0.547006, 0.547006 )
+texture = ExtResource( 5 )
