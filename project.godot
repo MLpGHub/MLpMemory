@@ -30,8 +30,8 @@ GameManager="*res://GameManager.gd"
 
 [display]
 
-window/size/width=1900
-window/size/height=1000
+window/size/width=1280
+window/size/height=800
 
 [rendering]
 
