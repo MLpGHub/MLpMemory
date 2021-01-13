@@ -30,8 +30,8 @@ z_as_relative = false
 texture = ExtResource( 2 )
 
 [node name="4symbols" type="Sprite" parent="BKGColor"]
-position = Vector2( 650.312, 275.762 )
-scale = Vector2( 0.46115, 0.46115 )
+position = Vector2( 641.833, 267.283 )
+scale = Vector2( 0.115918, 0.115918 )
 texture = ExtResource( 4 )
 flip_h = true
 

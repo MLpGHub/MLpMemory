@@ -4,7 +4,7 @@ class_name Card
 
 var suit
 var cardValue
-var face
+var cFace
 var cBack 
 
 func _ready():
@@ -15,6 +15,15 @@ func _ready():
 func _init(var sui, var val):
 	suit = sui
 	cardValue = val
-	face = load("res://assets/cards/card-"+str(suit)+"-"+str(cardValue)+".png")	
+	cFace = load("res://assets/cards/card-"+str(suit)+"-"+str(cardValue)+".png")	
 	cBack = GameManager.cardBack
-	set_normal_texture(face)
+	set_normal_texture(cBack)
+	
+func _pressed():
+	flip()
+
+func flip():
+	if get_normal_texture() == cBack:
+		set_normal_texture(cFace)
+	else:
+		set_normal_texture(cBack)
