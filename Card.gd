@@ -20,7 +20,7 @@ func _init(var sui, var val):
 	set_normal_texture(cBack)
 	
 func _pressed():
-	flip()
+	GameManager.chooseCard(self)
 
 func flip():
 	if get_normal_texture() == cBack:

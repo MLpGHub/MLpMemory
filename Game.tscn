@@ -56,3 +56,5 @@ texture = ExtResource( 3 )
 position = Vector2( 94.0217, 715.334 )
 scale = Vector2( 0.38402, 0.38402 )
 texture = ExtResource( 5 )
+
+[node name="Timer" type="Timer" parent="."]
